@@ -190,14 +190,57 @@ h3{
 h3:hover{
     text-decoration: underline;
     text-decoration-color: yellow
+}
+.slideshow-container {
+    
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev img,
+.next img{
+    cursor: pointer;
+    width: 30px;
+    margin-bottom: 50px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+
+
+
+.buttons-container{
+    display: flex;
+    justify-content: flex-end;
 
 }
-.slideShow {
-   width: 80%;
-   display: flex;
-   overflow: hidden;
-   
+
+.mySlades {
+    display: flex;
 }
-.slideShow img {
-    /* display: none; */
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }

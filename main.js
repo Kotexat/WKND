@@ -23,43 +23,26 @@ imgForSearch.addEventListener("click", function () {
 
 
 
-let slideShow = document.querySelector('.slideShow')
-let slideImages = document.querySelectorAll('.slideShow img')
-let prevBtn = document.querySelector('#prevBtn')
-let nextBtn = document.querySelector('#nextBtn')
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
 
 
-
-let counter = 1
-let size = slideImages[0].clientWidth;
-
-slideShow.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-nextBtn.addEventListener('click', () => {
-    console.log('test');
-    if (counter >= slideImages.length - 1) return;
-    slideShow.style.transition = 'transform 0.4s ease-in-out';
-    counter++;
-    slideShow.style.transform = 'translateX(' + (-size * counter) + 'px)';
-})
-
-prevBtn.addEventListener('click', () => {
-    if (counter <= 0) return;
-    slideShow.style.transition = 'transform 0.4s ease-in-out';
-    counter--;
-    slideShow.style.transform = 'translateX(' + (-size * counter) + 'px)';
-})
-
-slideShow.addEventListener('transitionend', () => {
-    if (slideImages[counter].id === 'lastClone') {
-        slideShow.style.transition = 'none'
-        counter = slideImages.length - 2;
-        slideShow.style.transform = 'translateX(' + (-size * counter) + 'px)';
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+   
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-    if (slideImages[counter].id === 'firstClone') {
-        slideShow.style.transition = 'none'
-        counter = slideImages.length - counter;
-        slideShow.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    }
-})
+   
+    slides[slideIndex - 1].style.display = "flex";
+   
+}
