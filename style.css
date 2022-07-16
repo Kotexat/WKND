@@ -3,6 +3,7 @@
     width: 100%;
     margin: 0 auto;
 }
+
 /* 1.header */
 
 header {
@@ -79,7 +80,8 @@ h1 {
 .liForHeader {
     margin-left: 20px;
 }
-.liForHeader:hover{
+
+.liForHeader:hover {
     color: red;
 }
 
@@ -109,39 +111,44 @@ h1 {
 
 /* 2.sectionFirst */
 
-.sectionFirst{
+.sectionFirst {
     width: 100%;
     position: relative;
 }
-.sectionFirst img{
+
+.sectionFirst img {
     width: 100%;
-    
+
 }
-.sectionFirstDiv{
+
+.sectionFirstDiv {
     width: 80%;
     height: 180px;
     background-color: white;
     position: absolute;
-    bottom : 0px ;
-    left : 120px;
+    bottom: 0px;
+    left: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
-    
+
+
 }
-h2{
+
+h2 {
     font-size: 40px;
     padding-left: 20px;
 }
-.sectionFirstDiv button{
+
+.sectionFirstDiv button {
     width: 15%;
     background-color: yellow;
     color: black;
     height: 30px;
-    border : none;
+    border: none;
     margin-left: 20px;
 }
+
 .sectionFirstDiv p {
     padding-left: 20px;
     width: 85%;
@@ -156,11 +163,13 @@ h2{
     margin-top: 150px;
 
 }
-.sectionSecondDiv{
+
+.sectionSecondDiv {
     display: flex;
-    
+
 }
-.lastArticle{
+
+.lastArticle {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -168,31 +177,37 @@ h2{
     background-color: #F7F7F7;
     padding-left: 15px;
 }
-.lastArticle span{
-  font-size: 20px;  
-  width: 60%;
-  
+
+.lastArticle span {
+    font-size: 20px;
+    width: 60%;
+
 }
+
 .lastArticle p {
     font-size: 15px;
     width: 90%;
 }
-.lastArticle button { 
+
+.lastArticle button {
     width: 50%;
     height: 40px;
     background-color: yellow;
-    border : none;
+    border: none;
     font-weight: bold;
 }
-h3{
+
+h3 {
     font-size: 40px;
 }
-h3:hover{
+
+h3:hover {
     text-decoration: underline;
     text-decoration-color: yellow
 }
+
 .slideshow-container {
-    
+
     position: relative;
     margin: auto;
 }
@@ -204,7 +219,7 @@ h3:hover{
 
 /* Next & previous buttons */
 .prev img,
-.next img{
+.next img {
     cursor: pointer;
     width: 30px;
     margin-bottom: 50px;
@@ -220,7 +235,7 @@ h3:hover{
 
 
 
-.buttons-container{
+.buttons-container {
     display: flex;
     justify-content: flex-end;
 
@@ -229,6 +244,7 @@ h3:hover{
 .mySlades {
     display: flex;
 }
+
 /* Fading animation */
 .fade {
     animation-name: fade;
@@ -243,4 +259,43 @@ h3:hover{
     to {
         opacity: 1
     }
+}
+
+
+/* sectionThird */
+
+
+.sectionThird {
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.sectionThirdDiv {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sectionThirdDiv img {
+    width: 350px;
+}
+
+.names {
+    color: #909090;
+}
+
+h4 {
+    font-size: 30px;
+    margin-bottom: 50px;
+
+}
+
+h4:hover {
+    text-decoration: underline;
+    text-decoration-color: yellow
+}
+
+hr {
+    color: #EBEBEB;
+    margin-top: 100px;
 }
