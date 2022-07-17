@@ -316,16 +316,19 @@ hr {
 
 }
 
-.newImage{
+.newImage {
     background-image: url('./Images/WKND-image.png');
 }
-.newImage1{
+
+.newImage1 {
     background-image: url(./Images/Photo2.jpg);
 }
-.newImage2{
+
+.newImage2 {
     background-image: url(./Images/Photo3.jpg);
 }
-.newImage3{
+
+.newImage3 {
     background-image: url(./Images/Photo4.webp);
 }
 
@@ -414,3 +417,56 @@ h5:hover {
     font-size: 15px;
 }
 
+
+/* sectionSixth */
+
+
+.sectionSixth {
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.sectionSixthDiv {
+    display: flex;
+}
+
+.email-validation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F7F7F7;
+    width: 80%;
+}
+
+.email-validation span {
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.email-validation p {
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+
+.email-validation input {
+    width: 20%;
+    height: 40px;
+    margin-left: 30px;
+    background-color: #EBEBEB;
+    border: none;
+}
+
+.email-validation button {
+    width: 10%;
+    margin-left: 15px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.email-validation div{
+    display: flex;
+}

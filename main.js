@@ -82,3 +82,20 @@ cardFourth.addEventListener('mouseover', () => {
     sectionFourthDiv.classList.remove('newImage')
     sectionFourthDiv.classList.remove('newImage2')
 })
+
+
+
+
+
+
+let input = document.querySelector('.email-validation input')
+let button = document.querySelector('.email-validation button')
+var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+button.addEventListener('click' , ()=>{
+    if (input.value === ""){
+         alert ("Error")
+    } 
+
+})
+
