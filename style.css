@@ -140,18 +140,21 @@ h2 {
     padding-left: 20px;
 }
 
-.sectionFirstDiv button {
+.sectionFirstDiv a {
     width: 15%;
     background-color: yellow;
     color: black;
-    height: 30px;
+    /* height: 30px; */
     border: none;
     margin-left: 20px;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
 }
 
 .sectionFirstDiv p {
     padding-left: 20px;
     width: 85%;
+    font-size: 20px;
 }
 
 
@@ -298,4 +301,56 @@ h4:hover {
 hr {
     color: #EBEBEB;
     margin-top: 100px;
+}
+
+/* sectionFourth */
+
+.sectionFourthDiv {
+    background-image: url('./Images/backgroundimage.png');
+    background-size: cover;
+    height: 100vh;
+    margin-top: 180px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+h5 {
+    font-size: 30px;
+    margin: 150px auto auto 150px;
+}
+
+h5:hover {
+    text-decoration: underline;
+    text-decoration-color: yellow
+}
+
+.divOnBackground {
+    width: 80%;
+    height: 180px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    
+    
+}
+
+.divOnBackground button {
+    width: 15%;
+    background-color: yellow;
+    color: black;
+    height: 30px;
+    border: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.divOnBackground p {
+    padding-left: 20px;
+    width: 85%;
+    font-size: 20px;
 }
