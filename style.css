@@ -313,7 +313,20 @@ hr {
     position: relative;
     display: flex;
     justify-content: center;
-    
+
+}
+
+.newImage{
+    background-image: url('./Images/WKND-image.png');
+}
+.newImage1{
+    background-image: url(./Images/Photo2.jpg);
+}
+.newImage2{
+    background-image: url(./Images/Photo3.jpg);
+}
+.newImage3{
+    background-image: url(./Images/Photo4.webp);
 }
 
 h5 {
@@ -335,8 +348,8 @@ h5:hover {
     justify-content: space-around;
     position: absolute;
     bottom: 0;
-    
-    
+
+
 }
 
 .divOnBackground button {
@@ -354,3 +367,50 @@ h5:hover {
     width: 85%;
     font-size: 20px;
 }
+
+
+/* sectionFifth */
+
+.sectionFifth {
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sectionFifth span {
+    font-size: 30px;
+    margin-bottom: 100px;
+
+}
+
+.sectionFifthDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionFifthDiv img {
+    width: 350px;
+}
+
+.sectionFifth button {
+    margin-top: 100px;
+    width: 15%;
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-weight: bold;
+
+}
+
+.activities {
+    font-weight: bold;
+}
+
+.article {
+    color: #909090;
+    font-size: 15px;
+}
+

@@ -46,3 +46,39 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "flex";
    
 }
+
+
+
+cardFirst = document.querySelector('.cardFirst')
+cardSecond = document.querySelector('.cardSecond')
+cardThird = document.querySelector('.cardThird')
+cardFourth = document.querySelector('.cardFourth')
+
+sectionFourthDiv = document.querySelector('.sectionFourthDiv')
+cardFirst.addEventListener('mouseover', ()=>{
+    sectionFourthDiv.classList.add('newImage')
+    sectionFourthDiv.classList.remove('newImage1')
+    sectionFourthDiv.classList.remove('newImage2')
+    sectionFourthDiv.classList.remove('newImage3')
+})
+
+cardSecond.addEventListener('mouseover' , ()=>{
+    sectionFourthDiv.classList.add('newImage1')
+    sectionFourthDiv.classList.remove('newImage')
+    sectionFourthDiv.classList.remove('newImage2')
+    sectionFourthDiv.classList.remove('newImage3')
+})
+
+cardThird.addEventListener('mouseover' , ()=>{
+    sectionFourthDiv.classList.add('newImage2')
+    sectionFourthDiv.classList.remove('newImage1')
+    sectionFourthDiv.classList.remove('newImage')
+    sectionFourthDiv.classList.remove('newImage3')
+})
+
+cardFourth.addEventListener('mouseover', () => {
+    sectionFourthDiv.classList.add('newImage3')
+    sectionFourthDiv.classList.remove('newImage1')
+    sectionFourthDiv.classList.remove('newImage')
+    sectionFourthDiv.classList.remove('newImage2')
+})
