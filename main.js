@@ -90,12 +90,16 @@ cardFourth.addEventListener('mouseover', () => {
 
 let input = document.querySelector('.email-validation input')
 let button = document.querySelector('.email-validation button')
-var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
 
 button.addEventListener('click' , ()=>{
     if (input.value === ""){
          alert ("Error")
-    } 
+    } else if (!input.value.includes('@') || !input.value.includes('.')){
+        alert('incorrect format')
+    }else {
+        alert('success')
+    }
 
 })
 
