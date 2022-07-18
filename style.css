@@ -277,6 +277,18 @@ h3:hover {
 .sectionThirdDiv {
     display: flex;
     justify-content: space-around;
+    width: 0%;
+}
+.anime {
+    animation: animethird 2s linear forwards;
+}
+@keyframes animethird {
+    0%{
+        width: 0%;
+    }
+          100% {
+              width: 100%;
+          }
 }
 
 .sectionThirdDiv img {
